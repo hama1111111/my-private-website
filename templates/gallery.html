@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - My Private Website</title>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: cyan;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        a {
+            color: lightblue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Gallery 🖼</h1>
+    <div class="gallery">
+        <img src="/static/pic1.jpg" alt="Image 1">
+        <img src="/static/pic2.jpg" alt="Image 2">
+        <img src="/static/pic3.jpg" alt="Image 3">
+    </div>
+
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>
